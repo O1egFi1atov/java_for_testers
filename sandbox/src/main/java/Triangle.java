@@ -1,14 +1,15 @@
-public class Triangle {
+public record Triangle(double a, double b, double c) {
 
-    private final double a;
-    private final double b;
-    private final double c;
-
-    public Triangle(double a, double b, double c){
-        this.a = a;
-        this.b = b;
-        this.c = c;
-    }
+//    свойства класса и конструктор закомментировал, поскольку вместо class применил нотацию record (Лекция 1.9.)
+//    private final double a;
+//    private final double b;
+//    private final double c;
+//
+//    public Triangle(double a, double b, double c){
+//        this.a = a;
+//        this.b = b;
+//        this.c = c;
+//    }
 
     public double perimeter() {
         return this.a + this.b + this.c;
