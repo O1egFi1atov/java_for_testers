@@ -1,8 +1,8 @@
 public class Triangle {
 
-    private double a;
-    private double b;
-    private double c;
+    private final double a;
+    private final double b;
+    private final double c;
 
     public Triangle(double a, double b, double c){
         this.a = a;
@@ -10,12 +10,12 @@ public class Triangle {
         this.c = c;
     }
 
-
     public double perimeter() {
         return this.a + this.b + this.c;
     }
 
     public double area(){
-        return Math.sqrt(perimeter() * (perimeter() - this.a) * (perimeter() - this.b) * (perimeter() - this.c));
+        var hp = perimeter() / 2;
+        return Math.sqrt(hp * (hp - this.a) * (hp - this.b) * (hp - this.c));
     }
 }
