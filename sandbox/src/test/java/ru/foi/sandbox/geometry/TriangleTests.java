@@ -1,4 +1,4 @@
-package ru.filatov.geometry;
+package ru.foi.sandbox.geometry;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

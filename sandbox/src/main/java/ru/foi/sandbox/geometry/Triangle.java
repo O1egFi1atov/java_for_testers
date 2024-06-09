@@ -1,4 +1,4 @@
-package ru.filatov.geometry;
+package ru.foi.sandbox.geometry;
 
 public record Triangle(double a, double b, double c) {
 
