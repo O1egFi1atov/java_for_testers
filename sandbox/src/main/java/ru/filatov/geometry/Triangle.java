@@ -1,11 +1,13 @@
+package ru.filatov.geometry;
+
 public record Triangle(double a, double b, double c) {
 
-//    свойства класса и конструктор закомментировал, поскольку вместо class применил нотацию record (Лекция 1.9.)
+//    свойства класса и конструктор объекта закомментировал, поскольку вместо class применил нотацию record (Лекция 1.9.)
 //    private final double a;
 //    private final double b;
 //    private final double c;
 //
-//    public Triangle(double a, double b, double c){
+//    public ru.filatov.geometry.Triangle(double a, double b, double c){
 //        this.a = a;
 //        this.b = b;
 //        this.c = c;
