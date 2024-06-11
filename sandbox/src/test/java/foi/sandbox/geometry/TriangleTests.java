@@ -1,4 +1,4 @@
-package ru.foi.sandbox.geometry;
+package foi.sandbox.geometry;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

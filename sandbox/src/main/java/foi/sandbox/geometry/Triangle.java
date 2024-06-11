@@ -1,4 +1,4 @@
-package ru.foi.sandbox.geometry;
+package foi.sandbox.geometry;
 
 public record Triangle(double a, double b, double c) {
 
