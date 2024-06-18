@@ -1,24 +1,36 @@
 package foi.sandbox.geometry;
 
 public record Triangle(double a, double b, double c) {
-
-//    свойства класса и конструктор объекта закомментировал, поскольку вместо class применил нотацию record (Лекция 1.9.)
+//    свойства класса и конструктор объекта ниже закомментировал, поскольку вместо class применил нотацию record (Лекция 1.9.)
 //    private final double a;
 //    private final double b;
 //    private final double c;
 //
-//    public ru.filatov.geometry.Triangle(double a, double b, double c){
+//    public Triangle(double a, double b, double c){
 //        this.a = a;
 //        this.b = b;
 //        this.c = c;
 //    }
 
+    // Применил ветвление (Лекция 2.3), для этого требуется создать конструктор. Обрати внимание, поскольку ранее Triangle создан как record, поэтому перед конструктором не указаны свойства объекта (стороны треугольника), а у конструктора в параметрах не указаны значения с типами этих значений)
+    public Triangle {
+        if (a <= 0 || b <= 0 || c <= 0) {
+            throw new IllegalArgumentException("Triangle side cannot be negative.");
+        }
+        if (a + b <= c || a + c <= b || b + c <= a) {
+            throw new IllegalArgumentException("The sum of any two sides must not be less than the third side.");
+        }
+    }
+
+    // метод вычисления периметра
     public double perimeter() {
         return this.a + this.b + this.c;
     }
 
-    public double area(){
+    // метод вычисления площади
+    public double area() {
         var hp = perimeter() / 2;
         return Math.sqrt(hp * (hp - this.a) * (hp - this.b) * (hp - this.c));
     }
+
 }

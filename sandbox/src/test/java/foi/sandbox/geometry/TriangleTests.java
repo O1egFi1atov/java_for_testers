@@ -20,4 +20,9 @@ public class TriangleTests {
 //        System.out.println(result);
         Assertions.assertEquals(6.0,result);
     }
+
+    @Test
+    void triangleSideCannotBeNegative(){
+
+    }
 }
