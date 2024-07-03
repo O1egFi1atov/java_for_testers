@@ -8,7 +8,7 @@ public class TriangleTests {
     @Test
     void canCalculatePerimeter(){
         var triangleExample = new Triangle(5.0, 4.0, 3.0);
-        double resultTrianglePerimeter = triangleExample.perimeter();
+        double resultTrianglePerimeter = triangleExample.perimeter(); /* можно было и не создавать эту переменную result, а в параметрах функции assertEquals сразу использовать сам метод. Решил создать переменную, так как лично мне проще так читать код (Урок 1.7. JAVA17) */
 //        System.out.println(resultTrianglePerimeter);
         Assertions.assertEquals(12.0, resultTrianglePerimeter);
     }
