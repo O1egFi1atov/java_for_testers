@@ -2,26 +2,26 @@ package foi.sandbox.geometry;
 
 public class Triangle {
     // свойства класса:
-    private final double a;
-    private final double b;
-    private final double c;
+    private final double sideA;
+    private final double sideB;
+    private final double sideC;
 
     // конструктор объекта:
-    public Triangle(double a, double b, double c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
+    public Triangle(double sideA, double sideB, double sideC) {
+        this.sideA = sideA;
+        this.sideB = sideB;
+        this.sideC = sideC;
     }
 
     // метод вычисления периметра
     public double perimeter() {
-        return this.a + this.b + this.c;
+        return this.sideA + this.sideB + this.sideC;
     }
 
     // метод вычисления площади
     public double area() {
-        var hp = perimeter() / 2;
-        return Math.sqrt(hp * (hp - this.a) * (hp - this.b) * (hp - this.c));
+        var halfPerimeter = perimeter() / 2;
+        return Math.sqrt(halfPerimeter * (halfPerimeter - this.sideA) * (halfPerimeter - this.sideB) * (halfPerimeter - this.sideC));
     }
 }
 

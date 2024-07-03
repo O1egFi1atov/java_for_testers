@@ -7,18 +7,18 @@ public class TriangleTests {
 
     @Test
     void canCalculatePerimeter(){
-        var p = new Triangle(5.0, 4.0, 3.0);
-        double result = p.perimeter();
-//        System.out.println(result);
-        Assertions.assertEquals(12.0, result);
+        var triangleExample = new Triangle(5.0, 4.0, 3.0);
+        double resultTrianglePerimeter = triangleExample.perimeter();
+//        System.out.println(resultTrianglePerimeter);
+        Assertions.assertEquals(12.0, resultTrianglePerimeter);
     }
 
     @Test
     void canCalculateArea(){
-        var s = new Triangle(5.0, 4.0, 3.0);
-        double result = s.area();
-//        System.out.println(result);
-        Assertions.assertEquals(6.0,result);
+        var triangleExample = new Triangle(5.0, 4.0, 3.0);
+        double resultTriangleArea = triangleExample.area();
+//        System.out.println(resultTriangleArea);
+        Assertions.assertEquals(6.0,resultTriangleArea);
     }
 
     @Test
