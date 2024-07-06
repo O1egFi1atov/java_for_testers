@@ -34,6 +34,5 @@ public class TriangleTests {
 
     @Test
     void triangleSideCannotBeNegative() {
-
     }
 }
